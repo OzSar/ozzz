@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CDI College Survey Form</title>
+</head>
+<body>
+    <section class="main_body">
+        <h1 id="title">CDI College Survey Form</h1>
+        
+            <form id="survey-form">
+                <div class="form_group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form_group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form_group">
+                    <label for="number" id="number-label">Age</label>
+                    <input type="number" name="age" id="number" placeholder="Enter your age" min="10" max="99">
+                </div>
+                <div class="form_group">
+                    <p>Which option best describes your current role?</p>
+                    <select name="role" id="dropdown" class="dropdown" required>
+                        <option value="Select current role" disabled selected>Select current role</option>
+                        <option value="Student">Student</option>
+                    
+                        <option value="Graduate">Graduate</option>
+                      
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <p>Would you recommend CDI College to a friend?</p>
+                    <label>
+                        <input type="radio" name="recommend" class="radio_btn" value="definitely" checked>Definitely
+                    </label>
+                    <label>
+                        <input type="radio" name="recommend" class="radio_btn" value="maybe">Maybe
+                    </label>
+                    <label>
+                        <input type="radio" name="recommend" class="radio_btn" value="not sure">Not sure
+                    </label>
+                </div>
+                <div class="form_group">
+                    <p>What is your favorite feature of CDI College?</p>
+                    <select name="feature" id="" class="dropdown" required>
+                        <option value="Select an option" selected disabled>Select an option</option>
+                        <option value="Challenges">Challenges</option>
+                        <option value="Projects">Projects</option>
+                        <option value="Community">Community</option>
+                        <option value="Open Source">Open Source</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <p>What would you like to see improved?</p>
+                    <label>
+                        <input type="checkbox" name="choice" value="front-end Projects" class="checkbox_btn">Front-end Projects
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choice" value="back-end Projects" class="checkbox_btn">Back-end Projects
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choice" value="Data Visualization" class="checkbox_btn">Data Visualization
+                    </label>
+                     
+                    <label>
+                        <input type="checkbox" name="choice" value="Videos" class="checkbox_btn">Videos
+                    </label>
+                   
+                    <label>
+                        <input type="checkbox" name="choice" value="Additional Courses" class="checkbox_btn">Additional Courses
+                    </label>
+                </div>
+                <div class="form_group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comments here.."></textarea>
+                </div>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        
+    </section>
+</body>
+</html>
